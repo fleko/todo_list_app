@@ -1,0 +1,14 @@
+# create task
+curl -d "name=task_1" -v -XPOST localhost:8080/api/tasks
+
+# get tasks
+curl -v -XGET localhost:8080/api/tasks
+
+# get task by ID
+curl -v -XGET localhost:8080/api/tasks/ID
+
+# delete task by ID
+curl -v -XDELETE localhost:8080/api/tasks/ID
+
+# toggle task by ID
+curl -v -XPUT localhost:8080/api/tasks/ID
